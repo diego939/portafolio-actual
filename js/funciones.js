@@ -29,7 +29,7 @@ function masDatos(){
                 <div class="card-header h4 bg-secondary text-white border-dark border-2">Más Datos</div>
                 <div class="card-body">
                     <p class="bi-calendar"> Nacimiento:<span class="text-secondary"> 17-Marzo-1990</span></p>
-                    <p class="bi-calendar-heart"> Edad:<span class="text-secondary"> 33 Años</span></p>
+                    <p class="bi-calendar-heart"> Edad:<span class="text-secondary"> `+edad+` Años</span></p>
                     <p class="bi-gender-male"> Género:<span class="text-secondary"> Masculino</span></p>
                     <p class="bi-heart"> Estado Civil:<span class="text-secondary"> Soltero</span></p>
                     <hr class="border-2 border-dark" style="opacity: 1;">
@@ -305,3 +305,28 @@ function yoProgramo() {
     showCloseButton: true
       });
   }
+
+  /* Calculo la edad para mostrar según mi fecha de nacimiento*/ 
+
+  function Edad(FechaNacimiento) {
+
+    var fechaNace = new Date(FechaNacimiento);
+    var fechaActual = new Date()
+
+    var mes = fechaActual.getMonth();
+    var dia = fechaActual.getDate();
+    var año = fechaActual.getFullYear();
+
+    fechaActual.setDate(dia);
+    fechaActual.setMonth(mes);
+    fechaActual.setFullYear(año);
+
+    edad = Math.floor(((fechaActual - fechaNace) / (1000 * 60 * 60 * 24) / 365));
+   
+    return edad;
+}
+
+var fecha =  '1990-03-17';
+
+var edad = Edad(fecha);
+
