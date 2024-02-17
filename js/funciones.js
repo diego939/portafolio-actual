@@ -300,6 +300,9 @@ function yoProgramo() {
                 <p class="bi-calendar"> Finalización:<span class="text-secondary"> En curso (98% alcanzado)</span></p>
                 <img class="img-fluid" src="images/instituciones/historia_academica-1.png" alt="">
               </div>
+              <div class="card-footer">
+                <a class="btn btn-danger btn-block m-2 bi-file-earmark-pdf"  href="documents/pdf/historia_academica.pdf" download="historia_academica.pdf" target="_blank" rel="noopener noreferrer"> Descargar pdf</a>
+              </div>
             </div>`,
     confirmButtonColor: "rgb(34, 3, 70)",
     showCloseButton: true
