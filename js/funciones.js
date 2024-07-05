@@ -297,7 +297,7 @@ function yoProgramo() {
               <div class="card-header h4 bg-secondary text-white border-dark border-2">Facultad De Ciencias Exactas y Naturales y Agrimensura (UNNE)</div>
               <div class="card-body">
                 <p class="bi bi-award-fill"> Título:<span class="text-secondary"> Analista Programador Universitario</span></p>
-                <p class="bi-calendar"> Finalización:<span class="text-secondary"> En curso (98% alcanzado)</span></p>
+                <p class="bi-calendar"> Finalización:<span class="text-secondary"> Jul - 2024</span></p>
                 <img class="img-fluid" src="images/instituciones/historia_academica-1.png" alt="">
               </div>
               <div class="card-footer">
