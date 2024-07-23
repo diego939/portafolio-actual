@@ -14,7 +14,7 @@ function verPerfil(){
     Swal.fire({
         title: "Diego David Almirón",
         text: "",
-        imageUrl: "images/perfil.png",
+        imageUrl: "images/foto edith.jpg",
         width: 400,
         imageWidth: 400,
         confirmButtonColor: "rgb(34, 3, 70)"
