@@ -49,7 +49,7 @@ function masDatos(){
 
 function Vue() {
   Swal.fire({
-  title: "#yoProgramo",
+  title: "VueJS",
   imageUrl: "images/certificados/VueJS Certificado/Certificado-Vue.JS-EducaciónIT.png",
   width: 800,
   imageWidth: 800,
@@ -94,7 +94,7 @@ function yoProgramo() {
 
   function habBlandas() {
     Swal.fire({
-    title: " Desarrollo Fullstack con Java",
+    title: "Habilidades Blandas",
     imageUrl: "images/certificados/Habilidades Blandas Certificado/Certificado-Habilidades-Blandas-EducaciónIT.png",
     width: 800,
     imageWidth: 800,
