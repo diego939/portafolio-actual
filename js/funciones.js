@@ -47,6 +47,17 @@ function masDatos(){
 
 /* Funciones de diplomas */
 
+function Vue() {
+  Swal.fire({
+  title: "#yoProgramo",
+  imageUrl: "images/certificados/VueJS Certificado/Certificado-Vue.JS-EducaciónIT.png",
+  width: 800,
+  imageWidth: 800,
+  confirmButtonColor: "rgb(34, 3, 70)"
+  
+  });
+}
+
 function yoProgramo() {
     Swal.fire({
     title: "#yoProgramo",
@@ -74,6 +85,17 @@ function yoProgramo() {
     Swal.fire({
     title: " Desarrollo Fullstack con Java",
     imageUrl: "images/certificados/CertificadoDigitalers2021/CertificadoDigitalers2021-1.png",
+    width: 800,
+    imageWidth: 800,
+    confirmButtonColor: "rgb(34, 3, 70)"
+    
+    });
+  }
+
+  function habBlandas() {
+    Swal.fire({
+    title: " Desarrollo Fullstack con Java",
+    imageUrl: "images/certificados/Habilidades Blandas Certificado/Certificado-Habilidades-Blandas-EducaciónIT.png",
     width: 800,
     imageWidth: 800,
     confirmButtonColor: "rgb(34, 3, 70)"
@@ -298,6 +320,7 @@ function yoProgramo() {
               <div class="card-body">
                 <p class="bi bi-award-fill"> Título:<span class="text-secondary"> Analista Programador Universitario</span></p>
                 <p class="bi-calendar"> Finalización:<span class="text-secondary"> Jul - 2024</span></p>
+                <p class=""> Diploma:<span class="text-secondary"> En trámite</span></p>
                 <img class="img-fluid" src="images/instituciones/historia_academica-1.png" alt="">
               </div>
               <div class="card-footer">
