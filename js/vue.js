@@ -49,9 +49,10 @@ createApp({
         Swal.fire({
         icon: 'question',
         iconHtml: '<i class="bi bi-envelope-plus"></i>',
-        title: 'Gracias "'+ this.nombre + '" por tu interés. Te estaré contactando a la brevedad!',
+        title: '"'+ this.nombre + '": gracias por tu interés ☺️',
+        text: 'Te estaré contactando a la brevedad!',
         showConfirmButton: false,
-        timer: 4000
+        timer: 6000
         })
         },
 
