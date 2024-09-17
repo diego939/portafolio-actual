@@ -176,6 +176,7 @@
                         <h4 class=""><i class="bi bi-bank2"></i> Istitutos</h4>
                         <hr style="opacity: 1;">
                         <div class="row text-center">
+                          <!--
                           <div class="col-4 fw-bold">Institución</div>
                           <div class="col-4 fw-bold">Título</div>
                           <div class="col-4 fw-bold">Ver</div>
@@ -196,6 +197,20 @@
                           <div class="col-4 ">Facultad de Ciencias Exactas UNNE</div>
                           <div class="col-4 ">Analista Programador universitario</div>
                           <div class="col-4 bi bi-eye btn" onclick="facenaUnne()"></div>
+                          -->
+                          <div class="col-sm-3 d-grid" v-for="(institucion, index) in instituciones" :key="index">
+                            <div class="card mt-2 mb-2 shadow">
+                              <img class="card-img-top p-4" :src="institucion.imagen" alt="Card image" style="object-fit: cover; max-width: 100%;">
+                              <div class="card-body">
+                                <p class="card-title fw-bold text-secondary">{{institucion.nombre}}</p>
+                                <p class="card-text fw-bold">Título: <span class="text-primary">{{institucion.titulo}}</span></p>
+                                <p class="card-title fw-bold text-secondary">Finalización: {{institucion.finalizacion}}</p>
+                              </div>
+                              <div class="card-footer d-grid btn btn-dark btn-block" style="background-color: rgb(34, 3, 70);" @click="verInstituciones(institucion.imagen, institucion.nombre, institucion.titulo, institucion.finalizacion, institucion.certificado)">
+                                <div class="text-white bi bi-eye"> Ver</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

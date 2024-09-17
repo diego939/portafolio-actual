@@ -28,6 +28,12 @@ createApp({
             { nombre: "Oracle", duracion: "2 hs", imagen: "images/certificados/Diego David Almirón-Oracle/Diego David Almirón-Oracle-1.png"},
             { nombre: "Fundamentos Web", duracion: "15 hs", imagen: "images/certificados/Fundamentos Web certificado/Fundamentos Web certificado-1.png"},
             { nombre: "Corrien Tech", duracion: "2 hs", imagen: "images/certificados/CorrienTech/CorrienTech.png"},
+          ],
+          instituciones:[
+            {nombre: "Educación IT", titulo: "Desarrollador Fullstack Java", finalizacion: "Nov - 2021", imagen: "images/instituciones/educacion-it.jpg", certificado: "images/certificados/CertificadoDigitalers2021/CertificadoDigitalers2021-1.png"},
+            {nombre: "E-Learning UTN BA", titulo: "Desarrollador Web", finalizacion: "Oct - 2017", imagen: "images/instituciones/logo-utn.ba.jpg", certificado: "images/certificados/CertificadoUTN/CertificadoUTN-1.png"},
+            {nombre: "Argentina Programa", titulo: "Desarrollador Fullstack Junior", finalizacion: "Dic - 2022", imagen: "images/instituciones/argentina-programa.jpg", certificado: "images/certificados/Certificado_YoProgramo/Certificado_YoProgramo.png"},
+            {nombre: "Facultad de Ciencias Exactas UNNE", titulo: "Analista Programador universitario", finalizacion: "Jul - 2024", imagen: "images/instituciones/facena.jpg", certificado: "images/instituciones/historia_academica-1.png"},
           ]
         }
     },
@@ -94,6 +100,28 @@ createApp({
           confirmButtonColor: "rgb(34, 3, 70)"
           
           });
+        },
+
+        verInstituciones(imagen, nombre, titulo, finalizacion, certificado){
+
+          Swal.fire({
+            imageUrl: imagen,
+            width: 1000,
+            imageWidth: 300,
+            icon: 'question',
+            iconHtml: '<i class="bi bi-award-fill" style="color: rgb(34, 3, 70);"></i>',
+            html:`<div class="card border-dark border-2" style="font-family:'Anton';">
+                      <div class="card-header h4 bg-secondary text-white border-dark border-2">`+nombre+`</div>
+                      <div class="card-body">
+                        <p class="bi bi-award-fill"> Título:<span class="text-secondary"> `+titulo+`</span></p>
+                        <p class="bi-calendar"> Finalización:<span class="text-secondary"> `+finalizacion+`</span></p>
+                        <img class="img-fluid" src="`+certificado+`" alt="">
+                      </div>
+                    </div>`,
+            confirmButtonColor: "rgb(34, 3, 70)",
+            showCloseButton: true
+              });
+          
         }
      
     },
