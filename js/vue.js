@@ -72,7 +72,7 @@ createApp({
             {nombre: "UML", imagen: "images/skills/herramientas/uml.png"},
             {nombre: "Xampp", imagen: "images/skills/herramientas/xampp.png"},
             {nombre: "Hibernate", imagen: "images/skills/herramientas/hibernate.png"},
-            {nombre: "Enterprise Architect", imagen: "images/skills/herramientas/enterprise_architect.jpg"},
+            {nombre: "Enterprise Architect", imagen: "images/skills/herramientas/enterprise_architect.png"},
           ],
         }
     },
