@@ -49,7 +49,7 @@ createApp({
           ],
           lenguajes:[
             {nombre: "Java", imagen: "images/skills/lenguajes/java.png"},
-            {nombre: ".NET", imagen: "images/skills/lenguajes/.net.png"},
+            {nombre: ".NET", imagen: "images/skills/lenguajes/net.png"},
             {nombre: "Typescript", imagen: "images/skills/lenguajes/typescript.png"},
             {nombre: "JavaScript", imagen: "images/skills/lenguajes/javascript.png"},
             {nombre: "PHP", imagen: "images/skills/lenguajes/php.png"},
