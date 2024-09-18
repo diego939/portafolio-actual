@@ -359,8 +359,8 @@
                           <div class="card mt-2 mb-2 shadow" style="font-family:'Anton';">
                             <div class="card-header text-white" style="background-color: rgb(34, 3, 70);">FRAMEWORKS</div>
                             <div id="carouselFrameworksControls" class="carousel slide" data-bs-ride="carousel">
-                              <div class="carousel-inner" v-for="(framework, index) in frameworks" :key="index">
-                                <div class="carousel-item" data-bs-interval="100000" v-bind:class="index==0? 'active' : ''">
+                              <div class="carousel-inner">
+                                <div class="carousel-item" data-bs-interval="100000"  v-for="(framework, index) in frameworks" :key="index" v-bind:class="index==0? 'active' : ''">
                                   <img :src="framework.imagen" class="d-block w-100 p-4" alt="...">
                                   <div class="text-secondary m-1">{{framework.nombre}}</div>
                                 </div>
@@ -380,8 +380,8 @@
                           <div class="card mt-2 mb-2 shadow" style="font-family:'Anton';">
                             <div class="card-header text-white" style="background-color: rgb(34, 3, 70);">LIBRERÍAS</div>
                             <div id="carouselLibreriasControls" class="carousel slide" data-bs-ride="carousel">
-                              <div class="carousel-inner" v-for="(libreria, index) in librerias" :key="index">
-                                <div class="carousel-item" data-bs-interval="100000" :class="index==0? 'active' : ''">
+                              <div class="carousel-inner">
+                                <div class="carousel-item" data-bs-interval="100000" v-for="(libreria, index) in librerias" :key="index" :class="index==0? 'active' : ''">
                                   <img :src="libreria.imagen" class="d-block w-100 p-4" alt="...">
                                   <div class="text-secondary m-1">{{libreria.nombre}}</div>
                                 </div>
@@ -401,8 +401,8 @@
                           <div class="card mt-2 mb-2 shadow" style="font-family:'Anton';">
                             <div class="card-header text-white" style="background-color: rgb(34, 3, 70);">LENGUAJES</div>
                             <div id="carouselLenguajesControls" class="carousel slide" data-bs-ride="carousel">
-                              <div class="carousel-inner" v-for="(lenguaje, index) in lenguajes" :key="index">
-                                <div class="carousel-item" data-bs-interval="100000" :class="index==0? 'active' : ''">
+                              <div class="carousel-inner">
+                                <div class="carousel-item" data-bs-interval="100000" v-for="(lenguaje, index) in lenguajes" :key="index" :class="index==0? 'active' : ''">
                                   <img :src="lenguaje.imagen" class="d-block w-100 p-4" alt="...">
                                   <div class="text-secondary m-1">{{lenguaje.nombre}}</div>
                                 </div>
@@ -422,8 +422,8 @@
                           <div class="card mt-2 mb-2 shadow" style="font-family:'Anton';">
                             <div class="card-header text-white" style="background-color: rgb(34, 3, 70);">HERRAMIENTAS</div>
                             <div id="carouselHerramientasControls" class="carousel slide" data-bs-ride="carousel">
-                              <div class="carousel-inner" v-for="(herramienta, index) in herramientas" :key="index">
-                                <div class="carousel-item" data-bs-interval="100000" :class="index==0? 'active' : ''">
+                              <div class="carousel-inner">
+                                <div class="carousel-item" data-bs-interval="100000" v-for="(herramienta, index) in herramientas" :key="index" :class="index==0? 'active' : ''">
                                   <img :src="herramienta.imagen" class="d-block w-100 p-4" alt="...">
                                   <div class="text-secondary m-1">{{herramienta.nombre}}</div>
                                 </div>
