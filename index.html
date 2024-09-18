@@ -331,104 +331,221 @@
               <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
                 <div class="card-body">
                   
-                  
-                  <div class="card mb-2 border border-dark" style="font-family: 'Roboto Condensed'; color: black; text-align: justify;">
-                    <div class="card-header">
-                      <h5>
-                        Información del porcentual de habilidad:
-                      </h5>
-                    </div>
-                    <div class="card-body">
-                      <p>El porcentual de habilidad se otorga de acuerdo al nivel de conocimiento que tiene sobre la habilidad especificada en 5 niveles.
-                         Dentro del cual adquiere 20% de dicha habilidad por cada nivel alcanzado, los niveles se especifican en la siguiente tabla con sus categorias ordenadas en forma ascendente:</p>
-                      <div class="">
-                        <div class="table-responsive">
-                          <table class="table">
-                            <tr>
-                              <th>Nivel de Habilidad</th>
-                              <th>Porcentaje del nivel</th>
-                              <th></th>
-                            </tr>
-                            <tbody>
-                              <tr>
-                                <td>Regular</td>
-                                <td>20%</td>
-                                <td class="text-warning">
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star"></i>
-                                  <i class="bi bi-star"></i>
-                                  <i class="bi bi-star"></i>
-                                  <i class="bi bi-star"></i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Básico</td>
-                                <td>40%</td>
-                                <td class="text-warning">
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star"></i>
-                                  <i class="bi bi-star"></i>
-                                  <i class="bi bi-star"></i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Bueno</td>
-                                <td>60%</td>
-                                <td class="text-warning">
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star"></i>
-                                  <i class="bi bi-star"></i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Muy Bueno</td>
-                                <td>80%</td>
-                                <td class="text-warning">
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star"></i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>Excelente</td>
-                                <td>100%</td>
-                                <td class="text-warning">
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
                   <!-- Navegador de habilidades tiene dos secciones  -->
                   <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" data-bs-toggle="tab" href="#habBlandas">Skills</a>
+                    <li class="nav-item"></li>
+                      <a class="nav-link active" data-bs-toggle="tab" href="#habTecno">Tecnologías</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" data-bs-toggle="tab" href="#habTecno">Tecnologías</a>
+                      <a class="nav-link" data-bs-toggle="tab" href="#habBlandas">Skills</a>
                     </li>
                   </ul>
 
                   <!-- Tab panes -->
                   <div class="tab-content mt-2">
 
-                    <div class="tab-pane active" id="habBlandas">
+                    <div class="tab-pane active" id="habTecno">
                       <div class="mb-2" style="font-family: 'Roboto Condensed'; color: black; text-align: justify;">
                         <div class="d-grid mt-4 mb-2">
-                          <h5 class="btn btn-block btn-secondary disabled">
+                          <h5 class="btn btn-block btn-secondary disabled shadow">
+                            <i class="bi bi-wrench"></i> Herramientas y Lenguajes
+                          </h5>
+                        </div>
+                      </div>
+
+                      <div class="row text-center">
+                        <div class="col-sm">
+                          <div class="card mt-2 mb-2 shadow" style="font-family:'Anton';">
+                            <div class="card-header text-white" style="background-color: rgb(34, 3, 70);">FRAMEWORKS</div>
+                            <div id="carouselFrameworksControls" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-inner" v-for="(framework, index) in frameworks" :key="index">
+                                <div class="carousel-item active" data-bs-interval="100000" v-if="index==0">
+                                  <img :src="framework.imagen" class="d-block w-100 p-4" alt="...">
+                                  <div class="text-secondary m-1">{{framework.nombre}}</div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="100000" v-else>
+                                  <img :src="framework.imagen" class="d-block w-100 p-4" alt="...">
+                                  <div class="text-secondary m-1">{{framework.nombre}}</div>
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselFrameworksControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-info" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselFrameworksControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-info" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm">
+                          <div class="card mt-2 mb-2 shadow" style="font-family:'Anton';">
+                            <div class="card-header text-white" style="background-color: rgb(34, 3, 70);">LIBRERÍAS</div>
+                            <div id="carouselLibreriasControls" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-inner" v-for="(libreria, index) in librerias" :key="index">
+                                <div class="carousel-item active" data-bs-interval="100000" v-if="index==0" >
+                                  <img :src="libreria.imagen" class="d-block w-100 p-4" alt="...">
+                                  <div class="text-secondary m-1">{{libreria.nombre}}</div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="100000" v-else>
+                                  <img :src="libreria.imagen" class="d-block w-100 p-4" alt="...">
+                                  <div class="text-secondary m-1">{{libreria.nombre}}</div>
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselLibreriasControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-info" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselLibreriasControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-info" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm">
+                          <div class="card mt-2 mb-2 shadow" style="font-family:'Anton';">
+                            <div class="card-header text-white" style="background-color: rgb(34, 3, 70);">LENGUAJES</div>
+                            <div id="carouselLenguajesControls" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-inner" v-for="(lenguaje, index) in lenguajes" :key="index">
+                                <div class="carousel-item active" data-bs-interval="100000" v-if="index==0">
+                                  <img :src="lenguaje.imagen" class="d-block w-100 p-4" alt="...">
+                                  <div class="text-secondary m-1">{{lenguaje.nombre}}</div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="100000" v-else>
+                                  <img :src="lenguaje.imagen" class="d-block w-100 p-4" alt="...">
+                                  <div class="text-secondary m-1">{{lenguaje.nombre}}</div>
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselLenguajesControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-info" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselLenguajesControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-info" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm">
+                          <div class="card mt-2 mb-2 shadow" style="font-family:'Anton';">
+                            <div class="card-header text-white" style="background-color: rgb(34, 3, 70);">HERRAMIENTAS</div>
+                            <div id="carouselHerramientasControls" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-inner" v-for="(herramienta, index) in herramientas" :key="index">
+                                <div class="carousel-item active" data-bs-interval="100000" v-if="index==0">
+                                  <img :src="herramienta.imagen" class="d-block w-100 p-4" alt="...">
+                                  <div class="text-secondary m-1">{{herramienta.nombre}}</div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="100000" v-else>
+                                  <img :src="herramienta.imagen" class="d-block w-100 p-4" alt="...">
+                                  <div class="text-secondary m-1">{{herramienta.nombre}}</div>
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselHerramientasControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon bg-info" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselHerramientasControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon bg-info" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    
+                      
+                    </div>
+
+                    <div class="tab-pane fade" id="habBlandas">
+
+                      <div class="card mb-2 border border-dark shadow" style="font-family: 'Roboto Condensed'; color: black; text-align: justify;">
+                        <div class="card-header">
+                          <h5>
+                            Información del porcentual de Skills:
+                          </h5>
+                        </div>
+                        <div class="card-body">
+                          <p>El porcentual de habilidad se otorga de acuerdo al nivel de conocimiento que tiene sobre la habilidad especificada en 5 niveles.
+                             Dentro del cual adquiere 20% de dicha habilidad por cada nivel alcanzado, los niveles se especifican en la siguiente tabla con sus categorias ordenadas en forma ascendente:</p>
+                          <div class="">
+                            <div class="table-responsive">
+                              <table class="table">
+                                <tr>
+                                  <th>Nivel de Habilidad</th>
+                                  <th>Porcentaje del nivel</th>
+                                  <th></th>
+                                </tr>
+                                <tbody>
+                                  <tr>
+                                    <td>Regular</td>
+                                    <td>20%</td>
+                                    <td class="text-warning">
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star"></i>
+                                      <i class="bi bi-star"></i>
+                                      <i class="bi bi-star"></i>
+                                      <i class="bi bi-star"></i>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Básico</td>
+                                    <td>40%</td>
+                                    <td class="text-warning">
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star"></i>
+                                      <i class="bi bi-star"></i>
+                                      <i class="bi bi-star"></i>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Bueno</td>
+                                    <td>60%</td>
+                                    <td class="text-warning">
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star"></i>
+                                      <i class="bi bi-star"></i>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Muy Bueno</td>
+                                    <td>80%</td>
+                                    <td class="text-warning">
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star"></i>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Excelente</td>
+                                    <td>100%</td>
+                                    <td class="text-warning">
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mb-2" style="font-family: 'Roboto Condensed'; color: black; text-align: justify;">
+                        <div class="d-grid mt-4 mb-2">
+                          <h5 class="btn btn-block btn-secondary disabled shadow">
                             <i class="bi bi-lightbulb"></i> Habilidades Blandas
                           </h5>
                         </div>
@@ -436,7 +553,7 @@
                           <div class="row text-center">
 
                             <div class="col-sm-4 mt-2 mb-2">
-                              <div class="card">
+                              <div class="card shadow">
                                 <div class="card-header fw-bold bg-dark text-white">Trabajo en equipo</div>
                                 <div class="card-body">
                                   <div class="progress">
@@ -454,7 +571,7 @@
                               </div>
                             </div>
                             <div class="col-sm-4 mt-2 mb-2">
-                              <div class="card">
+                              <div class="card shadow">
                                 <div class="card-header fw-bold bg-dark text-white">Gestión del tiempo</div>
                                 <div class="card-body">
                                   <div class="progress">
@@ -472,7 +589,7 @@
                               </div>
                             </div>
                             <div class="col-sm-4 mt-2 mb-2">
-                              <div class="card">
+                              <div class="card shadow">
                                 <div class="card-header fw-bold bg-dark text-white">Liderazgo</div>
                                 <div class="card-body">
                                   <div class="progress">
@@ -491,7 +608,7 @@
                             </div>
 
                             <div class="col-sm-4 mt-2 mb-2">
-                              <div class="card">
+                              <div class="card shadow">
                                 <div class="card-header fw-bold bg-dark text-white">Resolución de Problemas</div>
                                 <div class="card-body">
                                   <div class="progress">
@@ -509,7 +626,7 @@
                               </div>
                             </div>
                             <div class="col-sm-4 mt-2 mb-2">
-                              <div class="card">
+                              <div class="card shadow">
                                 <div class="card-header fw-bold bg-dark text-white">Diseño de sistemas</div>
                                 <div class="card-body">
                                   <div class="progress">
@@ -527,7 +644,7 @@
                               </div>
                             </div>
                             <div class="col-sm-4 mt-2 mb-2">
-                              <div class="card">
+                              <div class="card shadow">
                                 <div class="card-header fw-bold bg-dark text-white">Creatividad</div>
                                 <div class="card-body">
                                   <div class="progress">
@@ -549,80 +666,6 @@
                       </div>
                     </div>
 
-                    <div class="tab-pane fade" id="habTecno">
-                      <div class="mb-2" style="font-family: 'Roboto Condensed'; color: black; text-align: justify;">
-                        <div class="d-grid mt-4 mb-2">
-                          <h5 class="btn btn-block btn-secondary disabled">
-                            <i class="bi bi-wrench"></i> Herramientas y Lenguajes
-                          </h5>
-                        </div>
-                        <hr style="opacity: 1;">
-                          <h6>FRAMEWORKS</h6>
-                          <button type="button" class="btn btn-dark m-2">
-                            Codeigniter <span class="badge bg-info">80%</span>
-                          </button>
-                          <button type="button" class="btn btn-dark m-2">
-                            Angular <span class="badge bg-info">80%</span>
-                          </button>
-                          <button type="button" class="btn btn-dark m-2">
-                            Spring boot <span class="badge bg-info">80%</span>
-                          </button>
-                          <button type="button" class="btn btn-dark m-2">
-                            NodeJs <span class="badge bg-info">80%</span>
-                          </button>
-                          <hr style="opacity: 1;">
-                          <h6>HERRAMIENTAS</h6>
-                          <span class="badge rounded-pill bg-dark">Enterprise Architect</span>
-                          <span class="badge rounded-pill bg-dark">Star UML</span>
-                          <span class="badge rounded-pill bg-dark">visual Studio Code</span>
-                          <span class="badge rounded-pill bg-dark">visual Basic</span>
-                          <span class="badge rounded-pill bg-dark">Apache Netbeans</span>
-                          <span class="badge rounded-pill bg-dark">Eclipse</span>
-                          <span class="badge rounded-pill bg-dark">BlueJ</span>
-                          <span class="badge rounded-pill bg-dark">Sublime Text</span>
-                          <span class="badge rounded-pill bg-dark">Sql Server</span>
-                          <span class="badge rounded-pill bg-dark">MySQL Workbench</span>
-                          <span class="badge rounded-pill bg-dark">phpmyadmin</span>
-                          <span class="badge rounded-pill bg-dark">gitlab</span>
-                          <span class="badge rounded-pill bg-dark">github</span>
-                          <span class="badge rounded-pill bg-dark">JPA</span>
-                          <hr style="opacity: 1;">
-                          <h6>LENGUAJES</h6>
-                          <button type="button" class="btn btn-dark m-2">
-                            HTML <span class="badge bg-success">80%</span>
-                          </button>
-                          <button type="button" class="btn btn-dark m-2">
-                            CSS <span class="badge bg-success">80%</span>
-                          </button>
-                          <button type="button" class="btn btn-dark m-2">
-                            PHP <span class="badge bg-success">60%</span>
-                          </button>
-                          <button type="button" class="btn btn-dark m-2">
-                            Java <span class="badge bg-success">100%</span>
-                          </button>
-                          <button type="button" class="btn btn-dark m-2">
-                            Javascript <span class="badge bg-success">100%</span>
-                          </button>
-                          <button type="button" class="btn btn-dark m-2">
-                            typeScript <span class="badge bg-success">80%</span>
-                          </button>
-                          <button type="button" class="btn btn-dark m-2">
-                            .NET <span class="badge bg-success">100%</span>
-                          </button>
-                          <button type="button" class="btn btn-dark m-2">
-                            SQL <span class="badge bg-success">100%</span>
-                          </button>
-                          <button type="button" class="btn btn-dark m-2">
-                            JSON <span class="badge bg-success">80%</span>
-                          </button>
-                          <hr style="opacity: 1;">
-                          <h6>LIBRERÍAS</h6>
-                          <span class="badge rounded-pill bg-dark">jquery</span>
-                          <span class="badge rounded-pill bg-dark">ReactJS</span>
-                          <span class="badge rounded-pill bg-dark">VueJS</span>
-                          <span class="badge rounded-pill bg-dark">Bootstrap</span>
-                      </div>
-                    </div>
 
                   </div>
 
