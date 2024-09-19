@@ -153,20 +153,34 @@
                             <button class="btn btn-dark btn-block m-2" @click="verCertificado(certificado.nombre,certificado.imagen,certificado.duracion)" style="background-color: rgb(34, 3, 70);"> {{certificado.nombre}}</button>
                           </div>
                         </div>-->
-                        <div class="row">
-                          <div class="col-sm-2 d-grid" v-for="(certificado, index) in certificados" :key="index">
-                            <div class="card mt-2 mb-2 shadow">
-                              <img class="card-img-top p-4" :src="certificado.imagen" alt="Card image" style="object-fit: cover; max-width: 100%;">
-                              <div class="card-body">
-                                <p class="card-title fw-bold text-secondary">{{certificado.nombre}}</p>
-                                <p class="card-text fw-bold">Duración: <span class="text-primary">{{certificado.duracion}}</span></p>
+                            <div class="row carousel slide" id="carouselDiplomasControls" data-bs-ride="carousel">
+                              <div class="col-lg-3"></div>
+                              <div class="d-grid col-lg-6">
+                                <span  class="carousel-inner rounded">
+                                  <div class="card mt-2 mb-2 carousel-item" data-bs-interval="100000" v-for="(certificado, index) in certificados" :key="index" :class="index==0? 'active' : ''">
+                                    <img class="card-img-top" :src="certificado.imagen" alt="Card image" style="object-fit: cover; max-width: 100%; padding: 50px;">
+                                    <div class="card-body">
+                                      <p class="card-title fw-bold text-secondary text-center">{{certificado.nombre}}</p>
+                                      <p class="card-text fw-bold text-center">Duración: <span class="text-primary">{{certificado.duracion}}</span></p>
+                                    </div>
+                                    <div class="card-footer d-grid btn btn-dark btn-block" style="background-color: rgb(34, 3, 70);" @click="verCertificado(certificado.nombre,certificado.imagen,certificado.duracion)">
+                                      <div class="text-white bi bi-eye"> Ver</div>
+                                    </div>
+                                  </div>
+                              </span>
                               </div>
-                              <div class="card-footer d-grid btn btn-dark btn-block" style="background-color: rgb(34, 3, 70);" @click="verCertificado(certificado.nombre,certificado.imagen,certificado.duracion)">
-                                <div class="text-white bi bi-eye"> Ver</div>
-                              </div>
+                              <div class="col-lg-3"></div>
+
+                              <button class="carousel-control-prev bg-secondary rounded-start" type="button" data-bs-target="#carouselDiplomasControls" data-bs-slide="prev" style="margin-bottom: 50px;">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next bg-secondary rounded-end" type="button" data-bs-target="#carouselDiplomasControls" data-bs-slide="next" style="margin-bottom: 50px;">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
                             </div>
-                          </div>
-                        </div>
+
                         </div>
                       </div>
                       
