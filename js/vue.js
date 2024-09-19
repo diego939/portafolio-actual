@@ -74,6 +74,9 @@ createApp({
             {nombre: "Hibernate", imagen: "images/skills/herramientas/hibernate.png"},
             {nombre: "Enterprise Architect", imagen: "images/skills/herramientas/enterprise_architect.png"},
           ],
+          habilidades:[
+            
+          ]
         }
     },
     methods: {
