@@ -31,7 +31,7 @@ createApp({
           ],
           instituciones:[
             {nombre: "Facultad de Ciencias Exactas UNNE", titulo: "Analista Programador universitario", finalizacion: "Jul - 2024", imagen: "images/instituciones/facena.jpg", certificado: "images/instituciones/historia_academica-1.png", pdf: "documents/pdf/historia_academica.pdf", npdf: "historia_academica.pdf"},
-            {nombre: "Argentina Programa", titulo: "Desarrollador Fullstack Junior", finalizacion: "Dic - 2022", imagen: "images/instituciones/argentina-programa.jpg", certificado: "images/certificados/Certificado_YoProgramo/Certificado_YoProgramo.png", pdf: "documents/pdf/Certificado_YoProgramo.pdf", npdf: "Certificado_YoProgramo.pdf"},
+            {nombre: "Argentina Programa", titulo: "Desarrollador Fullstack Junior", finalizacion: "Dic - 2022", imagen: "images/instituciones/arg-programa.png", certificado: "images/certificados/Certificado_YoProgramo/Certificado_YoProgramo.png", pdf: "documents/pdf/Certificado_YoProgramo.pdf", npdf: "Certificado_YoProgramo.pdf"},
             {nombre: "Educación IT", titulo: "Desarrollador Fullstack Java", finalizacion: "Nov - 2021", imagen: "images/instituciones/educacion-it.jpg", certificado: "images/certificados/CertificadoDigitalers2021/CertificadoDigitalers2021-1.png", pdf: "documents/pdf/Certificado digit@lers 2021.pdf", npdf: "Certificado digit@lers 2021.pdf"},
             {nombre: "E-Learning UTN BA", titulo: "Desarrollador Web", finalizacion: "Oct - 2017", imagen: "images/instituciones/logo-utn.ba.jpg", certificado: "images/certificados/CertificadoUTN/CertificadoUTN-1.png", pdf: "documents/pdf/CertificadoUTN.pdf", npdf: "CertificadoUTN.pdf"},
           ],

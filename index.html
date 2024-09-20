@@ -159,7 +159,7 @@
                               <div class="d-grid col-lg-6">
                                 <span  class="carousel-inner rounded">
                                   <div class="card mt-2 mb-2 carousel-item" data-bs-interval="100000" v-for="(certificado, index) in certificados" :key="index" :class="index==0? 'active' : ''">
-                                    <img class="card-img-top" :src="certificado.imagen" alt="Card image" style="object-fit: cover; max-width: 100%; padding: 50px;">
+                                    <img class="imagen card-img-top" :src="certificado.imagen" alt="Card image" style="object-fit: cover; max-width: 100%; padding: 50px;">
                                     <div class="card-body">
                                       <p class="card-title fw-bold text-secondary text-center">{{certificado.nombre}}</p>
                                       <p class="card-text fw-bold text-center">Duración: <span class="text-primary">{{certificado.duracion}}</span></p>
@@ -215,7 +215,7 @@
                           -->
                           <div class="col-sm-3 d-grid" v-for="(institucion, index) in instituciones" :key="index">
                             <div class="card mt-2 mb-2 shadow">
-                              <img class="card-img-top p-4" :src="institucion.imagen" alt="Card image" style="object-fit: cover; max-width: 100%;">
+                              <img class="imagen card-img-top p-4" :src="institucion.imagen" alt="Card image" style="object-fit: cover; max-width: 100%;">
                               <div class="card-body">
                                 <p class="card-title fw-bold text-secondary">{{institucion.nombre}}</p>
                                 <p class="card-text fw-bold">Título: <span class="text-primary">{{institucion.titulo}}</span></p>
@@ -411,7 +411,7 @@
                             <div id="carouselFrameworksControls" class="carousel slide" data-bs-ride="carousel">
                               <div class="carousel-inner">
                                 <div class="carousel-item" data-bs-interval="100000"  v-for="(framework, index) in frameworks" :key="index" v-bind:class="index==0? 'active' : ''">
-                                  <img :src="framework.imagen" class="d-block w-100 p-4" alt="...">
+                                  <img :src="framework.imagen" class="imagen d-block w-100 p-4" alt="...">
                                   <div class="text-secondary m-1">{{framework.nombre}}</div>
                                 </div>
                               </div>
@@ -432,7 +432,7 @@
                             <div id="carouselLibreriasControls" class="carousel slide" data-bs-ride="carousel">
                               <div class="carousel-inner">
                                 <div class="carousel-item" data-bs-interval="100000" v-for="(libreria, index) in librerias" :key="index" :class="index==0? 'active' : ''">
-                                  <img :src="libreria.imagen" class="d-block w-100 p-4" alt="...">
+                                  <img :src="libreria.imagen" class="imagen d-block w-100 p-4" alt="...">
                                   <div class="text-secondary m-1">{{libreria.nombre}}</div>
                                 </div>
                               </div>
@@ -453,7 +453,7 @@
                             <div id="carouselLenguajesControls" class="carousel slide" data-bs-ride="carousel">
                               <div class="carousel-inner">
                                 <div class="carousel-item" data-bs-interval="100000" v-for="(lenguaje, index) in lenguajes" :key="index" :class="index==0? 'active' : ''">
-                                  <img :src="lenguaje.imagen" class="d-block w-100 p-4" alt="...">
+                                  <img :src="lenguaje.imagen" class="imagen d-block w-100 p-4" alt="...">
                                   <div class="text-secondary m-1">{{lenguaje.nombre}}</div>
                                 </div>
                               </div>
@@ -474,7 +474,7 @@
                             <div id="carouselHerramientasControls" class="carousel slide" data-bs-ride="carousel">
                               <div class="carousel-inner">
                                 <div class="carousel-item" data-bs-interval="100000" v-for="(herramienta, index) in herramientas" :key="index" :class="index==0? 'active' : ''">
-                                  <img :src="herramienta.imagen" class="d-block w-100 p-4" alt="...">
+                                  <img :src="herramienta.imagen" class="imagen d-block w-100 p-4" alt="...">
                                   <div class="text-secondary m-1">{{herramienta.nombre}}</div>
                                 </div>
                               </div>
@@ -510,7 +510,7 @@
                               <div class="card shadow">
                                 <div class="card-header fw-bold text-white" style="background-color: rgb(34, 3, 70);">Trabajo en equipo</div>
                                 <div class="card-body m-4">
-                                  <img class="card-image img-fluid p-4" src="images/skills/habilidadesBlandas/trabajo en equipo.png" alt="">
+                                  <img class="imagen card-image img-fluid p-4" src="images/skills/habilidadesBlandas/trabajo en equipo.png" alt="">
                                 </div>
                                 <div class="card-footer">
                                   Muy Bueno:
@@ -526,7 +526,7 @@
                               <div class="card shadow">
                                 <div class="card-header fw-bold text-white" style="background-color: rgb(34, 3, 70);">Gestión del tiempo</div>
                                 <div class="card-body m-4">
-                                  <img class="card-image img-fluid p-4" src="images/skills/habilidadesBlandas/gestion del tiempo.png" alt="">
+                                  <img class="imagen card-image img-fluid p-4" src="images/skills/habilidadesBlandas/gestion del tiempo.png" alt="">
                                 </div>
                                 <div class="card-footer">
                                   Muy Bueno:
@@ -542,7 +542,7 @@
                               <div class="card shadow">
                                 <div class="card-header fw-bold text-white" style="background-color: rgb(34, 3, 70);">Liderazgo</div>
                                 <div class="card-body m-4">
-                                  <img class="card-image img-fluid p-4" src="images/skills/habilidadesBlandas/liderazgo.png" alt="">
+                                  <img class="imagen card-image img-fluid p-4" src="images/skills/habilidadesBlandas/liderazgo.png" alt="">
                                 </div>
                                 <div class="card-footer">
                                   Excelente:
@@ -559,7 +559,7 @@
                               <div class="card shadow">
                                 <div class="card-header fw-bold text-white" style="background-color: rgb(34, 3, 70);">Resolución de Problemas</div>
                                 <div class="card-body m-4">
-                                  <img class="card-image img-fluid p-4" src="images/skills/habilidadesBlandas/Resolucion de Problemas.png" alt="">
+                                  <img class="imagen card-image img-fluid p-4" src="images/skills/habilidadesBlandas/Resolucion de Problemas.png" alt="">
                                 </div>
                                 <div class="card-footer">
                                   Muy Bueno:
@@ -575,7 +575,7 @@
                               <div class="card shadow">
                                 <div class="card-header fw-bold text-white" style="background-color: rgb(34, 3, 70);">Diseño de sistemas</div>
                                 <div class="card-body m-4">
-                                  <img class="card-image img-fluid p-4" src="images/skills/habilidadesBlandas/disenio de sistemas.png" alt="">
+                                  <img class="imagen card-image img-fluid p-4" src="images/skills/habilidadesBlandas/disenio de sistemas.png" alt="">
                                 </div>
                                 <div class="card-footer">
                                   Muy Bueno:
@@ -591,7 +591,7 @@
                               <div class="card shadow">
                                 <div class="card-header fw-bold text-white" style="background-color: rgb(34, 3, 70);">Creatividad</div>
                                 <div class="card-body m-4">
-                                  <img class="card-image img-fluid p-4" src="images/skills/habilidadesBlandas/creatividad.png" alt="">
+                                  <img class="imagen card-image img-fluid p-4" src="images/skills/habilidadesBlandas/creatividad.png" alt="">
                                 </div>
                                 <div class="card-footer">
                                   Muy Bueno:
