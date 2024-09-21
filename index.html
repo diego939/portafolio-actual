@@ -163,6 +163,11 @@
                                     <div class="card-body">
                                       <p class="card-title fw-bold text-secondary text-center">{{certificado.nombre}}</p>
                                       <p class="card-text fw-bold text-center">Duración: <span class="text-primary">{{certificado.duracion}}</span></p>
+                                      <div class="text-center" style="font-family:'Anton';">
+                                        <a :href="certificado.credencial" target="_blank" rel="noopener noreferrer" class="btn btn-dark bi bi-box-arrow-up-right m-1" v-if="certificado.credencial != ''"> Credencial</a>
+                                        <a class="btn btn-dark bi bi-box-arrow-up-right m-1" v-else> Credencial</a>
+                                        <a :href="certificado.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-danger bi bi-file-pdf m-1"> pdf</a>
+                                      </div>
                                     </div>
                                     <div class="card-footer d-grid btn btn-dark btn-block" style="background-color: rgb(34, 3, 70);" @click="verCertificado(certificado.nombre,certificado.imagen,certificado.duracion)">
                                       <div class="text-white bi bi-eye"> Ver</div>
