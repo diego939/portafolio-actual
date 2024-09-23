@@ -170,6 +170,40 @@ createApp({
             showCloseButton: true
               });
           
+        },
+
+        //Vista previa de proyectos
+
+        videoTareas(){
+
+          Swal.fire({
+            width: 1000,
+            html:`<div class="card">
+                            <video controls autoplay src="videos/App De tareas.mp4" type="video/mp4" loop class="hover-to-play w-100">
+                            </video>
+                          </div>`,
+            confirmButtonColor: "rgb(34, 3, 70)",
+            showCloseButton: true
+              });
+        },
+
+        videoTorneodiverso(){
+
+          Swal.fire({
+            width: 1000,
+            html:`<div class="card">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                            <video controls autoplay src="videos/Copa Ctes Diversa.mp4" type="video/mp4" loop class="hover-to-play w-100">
+                            </video>
+                    </div>
+                    <div class="col-2"></div>
+                    </div>
+                  </div>`,
+            confirmButtonColor: "rgb(34, 3, 70)",
+            showCloseButton: true
+              });
         }
      
     },
