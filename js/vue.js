@@ -11,6 +11,7 @@ createApp({
           error:"",
           extPDF: ".pdf",
           certificados:[
+            { nombre: "Analista Programador", duracion: "3 años", imagen: "images/certificados/Analista Programador Universitario/Analista Programador Universitario - Diploma-1.png", credencial:"https://registrograduados.siu.edu.ar/consulta.php?id_tipo_documento%5E%5EVlR4S0pDbi9qZ3BQUkVrOFAyMGNpUT09%7C%7Cnro_documento%5E%5ENVk5bEVjaE1CNGNUMzE1Y1VzWG1wQT09%7C%7Cnombres%5E%5EWDZJR1NQUkVWKzIvTGFESXFoV0gzUT09%7C%7Capellidos%5E%5EMDczRFBtWVo3MUU1c0FJOHhMYitIZz09", pdf:"documents/pdf/Analista Programador Universitario - Diploma.pdf"},
             { nombre: "Vue.JS", duracion: "15 hs", imagen: "images/certificados/VueJS Certificado/Certificado-Vue.JS-EducaciónIT.png", credencial:"https://www.educacionit.com/perfil/diego-david-almiron-605939/certificado/70435", pdf:"documents/pdf/certificados/Certificado-Vue.JS-EducaciónIT.pdf"},
             { nombre: "#YoProgramo", duracion: "9 meses", imagen: "images/certificados/Certificado_YoProgramo/Certificado_YoProgramo.png", credencial:"https://drive.google.com/file/d/1S4vWwsi-DxSiflZfd7XPYQxntFIx1ETK/view?usp=sharing", pdf: "documents/pdf/certificados/Certificado_YoProgramo.pdf"},
             { nombre: "#SeProgramar", duracion: "3 meses", imagen: "images/certificados/argentina_programa_octubre_diciembre_2021/argentina_programa_octubre_diciembre_2021-1.png", credencial:"https://mumuki.io/argentina-programa/certificates/verify/aq1HlWWt9SPPQKuX", pdf: "documents/pdf/certificados/argentina_programa_octubre_diciembre_2021.pdf"},
